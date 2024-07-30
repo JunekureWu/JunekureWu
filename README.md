@@ -1,4 +1,4 @@
-#**Personal information**
+**Personal information**
 - 👋 Hi, I’m @JunekureWu
 - 👀 I am currently pursuing a Ph.D. with a focus on **computational bioinformatics**.
 - 🌱 My field of expertise is single-cell multi-omics (scRNA, scATAC, scHiC) and spatial omics.
@@ -7,7 +7,7 @@
 <br>
 <br>
 
-#**Research papers**<br>
+**Research papers**<br>
 
 **Knockdown of SQLE promotes CD8+ T cell infiltration in the tumor microenvironment**.<br> Jun Wu, WB.Hu. et al. *Cellular Signalling* [https://doi.org/10.1016/j.cellsig.2023.110983] <br>
 **Characterization of tumor-associated endothelial cells and the development of a prognostic model in pancreatic ductal adenocarcinoma**.<br> Jun Wu, Y.Liu. et al. *Biochimica et Biophysica Acta (BBA) - General Subjects* [https://doi.org/10.1016/j.bbagen.2023.130545] <br>
