@@ -32,14 +32,14 @@ import os
 import subprocess
 
 ASPERA_KEY = '/home/wuj/anaconda3/etc/asperaweb_id_dsa.openssh'
-#path to your Aspera Connect'key
+# path to your Aspera Connect'key
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(script_dir, 'data')
+data_dir = os.path.join(script_dir, 'data')#you need to mkdir *data* folder
 metadata_file = os.path.join(script_dir, 'metadata.csv')
 
-# download retry
-MAX_RETRIES = 10
+# re download
+MAX_RETRIES = 5
 
 def download_with_retries(ascp_cmd, temp_file):
     for attempt in range(MAX_RETRIES):
@@ -55,32 +55,28 @@ def download_with_retries(ascp_cmd, temp_file):
             print(f"Error downloading file on attempt {attempt + 1}: {e}")
     return False
 
-with open('metadata.csv', 'r',encoding='utf-8-sig') as csvfile:
+with open(metadata_file, 'r', encoding='utf-8-sig') as csvfile:
     reader = csv.DictReader(csvfile)
     print("CSV Columns:", reader.fieldnames)
-	for row in reader:
-    number = row['Run']
-    fastq_aspera = row['fastq_aspera'].split(';')
-    newname1 = os.path.join(data_dir, row['Named1'])
-    newname2 = os.path.join(data_dir, row['Named2'])
-    #
-    link1 = f"era-fasp@{fastq_aspera[0]}"
-    link2 = f"era-fasp@{fastq_aspera[1]}"
-    print (link1)
-    print (link2)
-    #download filename
-    temp_file1 = os.path.join(data_dir, run_id + "_1.fastq.gz")
-    temp_file2 = os.path.join(data_dir, run_id + "_2.fastq.gz")
-    
-    # Prepare ascp commands
-    ascp_cmd1 = ['ascp', '-i', ASPERA_KEY, '-QT', '-k', '1', '-v', '-l', '300m', '-P', '33001', link1, temp_file1]
-    ascp_cmd2 = ['ascp', '-i', ASPERA_KEY, '-QT', '-k', '1', '-v', '-l', '300m', '-P', '33001', link2, temp_file2]
+    for row in reader:
+        run_id = row['Run']
+        fastq_aspera = row['fastq_aspera'].split(';')
+        newname1 = os.path.join(data_dir, row['Named1'])
+        newname2 = os.path.join(data_dir, row['Named2'])
+        link1 = f"era-fasp@{fastq_aspera[0]}"
+        link2 = f"era-fasp@{fastq_aspera[1]}"
+        temp_file1 = os.path.join(data_dir, run_id + "_1.fastq.gz")
+        temp_file2 = os.path.join(data_dir, run_id + "_2.fastq.gz")
 
-    # Print the commands for debugging
-    print("Executing:", ' '.join(ascp_cmd1))
-    print("Executing:", ' '.join(ascp_cmd2))
+        # Prepare ascp commands
+        ascp_cmd1 = ['ascp', '-i', ASPERA_KEY, '-QT', '-k', '1', '-v', '-l', '300m', '-P', '33001', link1, temp_file1]
+        ascp_cmd2 = ['ascp', '-i', ASPERA_KEY, '-QT', '-k', '1', '-v', '-l', '300m', '-P', '33001', link2, temp_file2]
 
-   	 # Attempt to download the files with retries
+        # Print the commands for debugging
+        print("Executing:", ' '.join(ascp_cmd1))
+        print("Executing:", ' '.join(ascp_cmd2))
+
+        # Attempt to download the files with retries
         if download_with_retries(ascp_cmd1, temp_file1):
             os.rename(temp_file1, newname1)
             print(f"Renamed {temp_file1} to {newname1}")
@@ -92,6 +88,7 @@ with open('metadata.csv', 'r',encoding='utf-8-sig') as csvfile:
             print(f"Renamed {temp_file2} to {newname2}")
         else:
             print(f"Failed to download {temp_file2} after multiple attempts.")
+
 ```
 <br>
 
