@@ -37,6 +37,24 @@ ASPERA_KEY = '/home/wuj/anaconda3/etc/asperaweb_id_dsa.openssh'
 script_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(script_dir, 'data')
 metadata_file = os.path.join(script_dir, 'metadata.csv')
+
+# download retry
+MAX_RETRIES = 10
+
+def download_with_retries(ascp_cmd, temp_file):
+    for attempt in range(MAX_RETRIES):
+        try:
+            # Execute ascp command
+            result = subprocess.run(ascp_cmd, check=True)
+            if os.path.exists(temp_file):
+                print(f"Downloaded {temp_file} successfully.")
+                return True
+            else:
+                print(f"Error: {temp_file} does not exist after download attempt {attempt + 1}.")
+        except subprocess.CalledProcessError as e:
+            print(f"Error downloading file on attempt {attempt + 1}: {e}")
+    return False
+
 with open('metadata.csv', 'r',encoding='utf-8-sig') as csvfile:
     reader = csv.DictReader(csvfile)
     print("CSV Columns:", reader.fieldnames)
@@ -62,26 +80,18 @@ with open('metadata.csv', 'r',encoding='utf-8-sig') as csvfile:
     print("Executing:", ' '.join(ascp_cmd1))
     print("Executing:", ' '.join(ascp_cmd2))
 
-    	try:
-            # Execute ascp commands
-            result1 = subprocess.run(ascp_cmd1, check=True)
-            result2 = subprocess.run(ascp_cmd2, check=True)
+   	 # Attempt to download the files with retries
+        if download_with_retries(ascp_cmd1, temp_file1):
+            os.rename(temp_file1, newname1)
+            print(f"Renamed {temp_file1} to {newname1}")
+        else:
+            print(f"Failed to download {temp_file1} after multiple attempts.")
 
-            # Rename the files after download
-            if os.path.exists(temp_file1):
-                os.rename(temp_file1, newname1)
-                print(f"Renamed {temp_file1} to {newname1}")
-            else:
-                print(f"Error: {temp_file1} does not exist.")
-
-            if os.path.exists(temp_file2):
-                os.rename(temp_file2, newname2)
-                print(f"Renamed {temp_file2} to {newname2}")
-            else:
-                print(f"Error: {temp_file2} does not exist.")
-
-      except subprocess.CalledProcessError as e:
-             print(f"Error downloading files for {run_id}: {e}")
+        if download_with_retries(ascp_cmd2, temp_file2):
+            os.rename(temp_file2, newname2)
+            print(f"Renamed {temp_file2} to {newname2}")
+        else:
+            print(f"Failed to download {temp_file2} after multiple attempts.")
 ```
 <br>
 
