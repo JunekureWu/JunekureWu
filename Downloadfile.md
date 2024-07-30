@@ -29,6 +29,7 @@ Then, vim aspera_download.py  change the .openssh to your path **`ASPERA_KEY = '
 # This is aspera_download.py
 import csv
 import os
+import subprocess
 
 ASPERA_KEY = '/home/wuj/anaconda3/etc/asperaweb_id_dsa.openssh'
 #path to your Aspera Connect'key
