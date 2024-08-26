@@ -1,5 +1,5 @@
 ### Personal information
-- 👋 Hi, I’m @JunekureWu
+- 👋 Hi, I’m Jacky Wu @JunekureWu
 - 👀 I am currently pursuing a Ph.D. with a focus on **computational bioinformatics**.
 - 🌱 My field of expertise is single-cell multi-omics (scRNA, scATAC, scHiC) and spatial omics.
 - 💞️ I’m looking to collaborate on scientific research
