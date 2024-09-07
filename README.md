@@ -3,7 +3,7 @@
 - 👀 I am currently pursuing a Ph.D. with a focus on **computational bioinformatics**.
 - 🌱 My field of expertise is single-cell multi-omics (scRNA, scATAC, scHiC) and spatial omics.
 - 💞️ I’m looking to collaborate on scientific research
-- 📫 reach me via bioinfo1695@163.com or junwu@hnu.edu.cn
+- 📫 reach me via bioinfo1695@163.com or kurejacky@gmail.com
 <br>
 <br>
 
