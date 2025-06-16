@@ -14,7 +14,7 @@
 
 **Co-first**
 - **A novel signature predicts prognosis in pancreatic cancer based on tumor membrane-associated genes**.<br> Z. Ding#, J. Wu#. et al. *Heliyon* [https://doi.org/10.1016/j.heliyon.2025.e42791] <br>
-<br>
+- **Integrated transcriptomic and single-cell analysis reveals key immune-related genes and cellular crosstalk in the myocarditis microenvironment**.<br> YQ.L#, SF.H#, J. Wu#, et al. *European Journal of Inflammation* [https://doi.org/10.1177/1721727X25132753] <br>
 
 <!---
 JunekureWu/JunekureWu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
