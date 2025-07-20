@@ -9,12 +9,15 @@
 
 ### Research papers<br>
 **First author**
-- **Knockdown of SQLE promotes CD8+ T cell infiltration in the tumor microenvironment**.<br> J. Wu, W. Hu. et al. *Cellular Signalling* [https://doi.org/10.1016/j.cellsig.2023.110983] <br>
-- **Characterization of tumor-associated endothelial cells and the development of a prognostic model in pancreatic ductal adenocarcinoma**.<br> J. Wu, Y. Liu. et al. *Biochimica et Biophysica Acta (BBA) - General Subjects* [https://doi.org/10.1016/j.bbagen.2023.130545] <br>
+- **Knockdown of SQLE promotes CD8+ T cell infiltration in the tumor microenvironment**.<br> J. Wu, W. Hu. et al. *Cellular Signalling* **2024** [https://doi.org/10.1016/j.cellsig.2023.110983] <br>
+- **Characterization of tumor-associated endothelial cells and the development of a prognostic model in pancreatic ductal adenocarcinoma**.<br> J. Wu, Y. Liu. et al. *Biochimica et Biophysica Acta (BBA) - General Subjects* **2023**[https://doi.org/10.1016/j.bbagen.2023.130545] <br>
 
 **Co-first**
-- **A novel signature predicts prognosis in pancreatic cancer based on tumor membrane-associated genes**.<br> Z. Ding#, J. Wu#. et al. *Heliyon* [https://doi.org/10.1016/j.heliyon.2025.e42791] <br>
-- **Integrated transcriptomic and single-cell analysis reveals key immune-related genes and cellular crosstalk in the myocarditis microenvironment**.<br> YQ.L#, SF.H#, J. Wu#, et al. *European Journal of Inflammation* [https://doi.org/10.1177/1721727X25132753] <br>
+- **A novel signature predicts prognosis in pancreatic cancer based on tumor membrane-associated genes**.<br> Z. Ding#, J. Wu#. et al. *Heliyon* **2025**[https://doi.org/10.1016/j.heliyon.2025.e42791] <br>
+- **Integrated transcriptomic and single-cell analysis reveals key immune-related genes and cellular crosstalk in the myocarditis microenvironment**.<br> YQ.L#, SF.H#, J. Wu#, et al. *European Journal of Inflammation* **2025**[https://doi.org/10.1177/1721727X25132753] <br>
+
+**Corresponding**
+- **A novel cancer-associated membrane signature predicts prognosis and therapeutic response for lung adenocarcinoma**.<br> B. Tu, J. Wu*. et al. *Scientific Reports* **2025** [https://doi.org/10.1038/s41598-025-11105-8] <br>
 
 <!---
 JunekureWu/JunekureWu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
