@@ -6,7 +6,7 @@
 
 ### Selected Publications<br>
 **First author**
-- **Integrating multi-modal transcriptomics identifies cellular subtypes with distinct roles in PDAC progression**.<br> **J. Wu**, TH. D, et al. *[Preprint](https://doi.org/10.1101/2025.02.11.637627)* **[2025]** <BR>
+- **Integrating multi-modal transcriptomics identifies cellular subtypes with distinct roles in PDAC progression**.<br> **J. Wu**, TH. D, et al. *[Cellular Oncology](https://doi.org/10.1007/s13402-025-01100-6)* **[2025]** <BR>
 - **Knockdown of SQLE promotes CD8+ T cell infiltration in the tumor microenvironment**.<br> **J. Wu**, W. Hu. et al. *[Cellular Signalling](https://doi.org/10.1016/j.cellsig.2023.110983)* **[2024]**  <br>
 - **Characterization of tumor-associated endothelial cells and the development of a prognostic model in pancreatic ductal adenocarcinoma**.<br> **J. Wu**, Y. Liu. et al. *[BBA - General Subjects](https://doi.org/10.1016/j.bbagen.2023.130545)* **[2023]** <br>
 
