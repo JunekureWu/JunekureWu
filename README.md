@@ -1,5 +1,8 @@
 ### Personal information <br>
-- I’m Jun (Jacky) Wu. Here are some of my publications and personal information [ORCID web](https://orcid.org/0000-0002-1717-0378).<br>
+- I’m Jun (Jacky) Wu. Here are some of my publications and personal information <img
+        src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+        style="width: 1em; margin-inline-start: 0.5em"
+        alt="ORCID iD icon"/>[ORCID web](https://orcid.org/0000-0002-1717-0378).<br>
 - My field of expertise is single-cell multi-omics (scRNA, scATAC, scCUT&Tag) and spatial omics.<br>
 - reach me via [bioinfo1695@163.com] or [kurejacky@gmail.com].<br>
 <br>
