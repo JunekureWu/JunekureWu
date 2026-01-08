@@ -10,10 +10,10 @@
 
 ### Selected Publications<br>
 **First author**
-- **J. Wu**, JK. W, et al. **[Advances in scCUT&Tag and computational analysis for single-cell gene regulatory element mapping]**. *Briefings in Bioinformatics*. **Under revision**
-- **J. Wu**, TH. D, et al. **[Integrating multi-modal transcriptomics identifies cellular subtypes with distinct roles in PDAC progression](https://doi.org/10.1007/s13402-025-01100-6)**. *Cellular Oncology*. **August 2025** <BR>
-- **J. Wu**, Y. Liu. et al. **[Characterization of tumor-associated endothelial cells and the development of a prognostic model in pancreatic ductal adenocarcinoma](https://doi.org/10.1016/j.bbagen.2023.130545)**. *BBA - General Subjects*. **December 2023** <br>
-- **J. Wu**, W. Hu. et al. **[Knockdown of SQLE promotes CD8+ T cell infiltration in the tumor microenvironment](https://doi.org/10.1016/j.cellsig.2023.110983)**. *Cellular Signalling*. **November 2023**  <br>
+- **J. Wu**, M. Wahiduzzaman, et al. [Advances in scCUT&Tag and computational analysis for single-cell gene regulatory element mapping](https://doi.org/10.1093/bib/bbag015). **Briefings in Bioinformatics**. **January 2026**
+- **J. Wu**, TH. Dai, et al. [Integrating multi-modal transcriptomics identifies cellular subtypes with distinct roles in PDAC progression](https://doi.org/10.1007/s13402-025-01100-6). **Cellular Oncology**. **August 2025** <BR>
+- **J. Wu**, Y. Liu. et al. [Characterization of tumor-associated endothelial cells and the development of a prognostic model in pancreatic ductal adenocarcinoma](https://doi.org/10.1016/j.bbagen.2023.130545). **BBA - General Subjects**. **December 2023** <br>
+- **J. Wu**, W. Hu. et al. [Knockdown of SQLE promotes CD8+ T cell infiltration in the tumor microenvironment](https://doi.org/10.1016/j.cellsig.2023.110983). **Cellular Signalling**. **November 2023**  <br>
 
 
 <!---
